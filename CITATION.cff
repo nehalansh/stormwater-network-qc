@@ -1,0 +1,43 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "stormwater-network-qc: quality control of municipal stormwater infrastructure data for SWMM (network cleaning, missing diameters and slopes, inlet merging)"
+type: software
+authors:
+  - family-names: Srivastava
+    given-names: Nehal
+    affiliation: Arizona State University
+    email: nsrivas7@asu.edu
+  - family-names: Mascaro
+    given-names: Giuseppe
+    affiliation: Arizona State University
+license: MIT
+version: 1.0.0
+date-released: 2026-10-05
+# TODO: add the Zenodo DOI after the first release
+keywords:
+  - stormwater
+  - SWMM
+  - drainage network
+  - data quality control
+references:
+  - type: article
+    title: "A coupled stormwater-power model for the simulation of cascading infrastructure failures: An application in Phoenix, AZ"
+    authors:
+      - family-names: Srivastava
+        given-names: Nehal Ansh
+      - family-names: Sparks
+        given-names: Ryan
+      - family-names: Chester
+        given-names: Mikhail
+      - family-names: Porto
+        given-names: Mattheus
+      - family-names: Johnson
+        given-names: Nathan
+      - family-names: Mascaro
+        given-names: Giuseppe
+    journal: "Environmental Modelling & Software"
+    volume: 201
+    start: 106980
+    year: 2026
+    doi: 10.1016/j.envsoft.2026.106980
+# Funding: NIST-NSF award #70NANB22H056 (DRRG)

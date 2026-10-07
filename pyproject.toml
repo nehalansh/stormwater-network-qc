@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "stormwater-network-qc"
+version = "1.0.0"
+description = "Quality control of municipal stormwater infrastructure data for SWMM: network cleaning, topology, missing diameters and slopes, inlet merging, catch basins."
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Nehal Srivastava", email = "nsrivas7@asu.edu" },
+           { name = "Giuseppe Mascaro" }]
+requires-python = ">=3.10"
+dependencies = [
+    "geopandas>=1.0",
+    "shapely>=2.0",
+    "numpy>=1.24,<2.4",   # pysheds 0.4 calls numpy.in1d, removed in numpy 2.4
+    "scipy>=1.10",
+    "pandas>=2.0",
+    "rasterio>=1.3",
+    "scikit-learn>=1.3",
+]
+
+[project.optional-dependencies]
+watersheds = ["pysheds>=0.4"]
+examples = ["matplotlib>=3.7"]
+test = ["pytest>=7"]
+
+[tool.setuptools]
+packages = ["stormwater_qc"]
